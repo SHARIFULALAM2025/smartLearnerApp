@@ -15,7 +15,7 @@ public class CourseDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_details);
 
-        // ১. আইডি কানেক্ট করা
+
         tvName = findViewById(R.id.tvDetailName);
         tvId = findViewById(R.id.tvDetailId);
         tvCredit = findViewById(R.id.tvDetailCredit);
@@ -34,7 +34,7 @@ public class CourseDetailsActivity extends AppCompatActivity {
         String books = getIntent().getStringExtra("books");
         String desc = getIntent().getStringExtra("desc");
 
-        // ৩. টেক্সট ভিউতে ডাটা সেট করা
+
         tvName.setText(name);
         tvId.setText("Course ID: " + id);
         tvCredit.setText("Credits: " + credit);
@@ -43,7 +43,7 @@ public class CourseDetailsActivity extends AppCompatActivity {
         tvBooks.setText("References: " + books);
         tvDesc.setText("Description: \n" + desc);
 
-        // ব্যাক বাটন কাজ
+
         btnBack.setOnClickListener(v -> finish());
     }
 }
