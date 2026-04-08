@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Course"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"/>
+
+        <EditText
+            android:id="@+id/etInputCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Name (e.g. Data Structure)"
+            android:inputType="textCapWords"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etInputCourseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course ID (e.g. CSE-201)"
+            android:inputType="textCapCharacters"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etInputCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Credits (e.g. 3.0)"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etInputFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Faculty Name"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etInputSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Schedule (e.g. Mon 10:00 AM)"
+            android:inputType="text"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etInputBooks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reference Books"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:gravity="top"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etInputDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Description"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:gravity="top"
+            android:padding="14dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnAddCourse"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SAVE COURSE INFO"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
